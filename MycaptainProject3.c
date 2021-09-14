@@ -5,14 +5,6 @@ int main()
 int n;
 printf("Enter a number from 1-5\n");
 scanf("%d",&n);
-if(n!=1&&n!=2&&n!=3&&n!=4&&n!=5)
-{
-   printf("--------!!ERROR!!---------\n");
-   printf("Enter a number between 1-5\n");
-   printf("--------!!ERROR!!---------\n\n");
-}
-else
-{
 printf("Very well your food choice is :\n");
 printf("---------------------------------------------------\n");
 switch(n)
@@ -32,9 +24,13 @@ break;
 case 5 :
 printf("| Food Choice : Veg Chowmin\t\t\t  |\n| Food Cost : 149\t\t\t\t  |");
 break;
+default :
+    printf("\n--------!!ERROR!!---------\n");
+   printf("Enter a number between 1-5\n");
+   printf("--------!!ERROR!!---------\n\n");
+   break;
 }
 printf("\n---------------------------------------------------\n");
-}
 return 0;
 }
 
