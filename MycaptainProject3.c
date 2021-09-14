@@ -5,8 +5,12 @@ int main()
 int n;
 printf("Enter a number from 1-5\n");
 scanf("%d",&n);
-if(n!=1||n!=1||n!=2||n!=3||n!=4||n!=5)
-    printf("enter a number between 1-5");
+if(n!=1&&n!=2&&n!=3&&n!=4&&n!=5)
+{
+   printf("--------!!ERROR!!---------\n");
+   printf("Enter a number between 1-5\n");
+   printf("--------!!ERROR!!---------\n\n");
+}
 else
 {
 printf("Very well your food choice is :\n");
@@ -33,3 +37,4 @@ printf("\n---------------------------------------------------\n");
 }
 return 0;
 }
+
