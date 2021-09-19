@@ -14,7 +14,7 @@ int main()
 int n,i,k,spc,j,t=1;
 printf("Enter number of rows of Pyramid : ");
 scanf("%d",&n);
-spc=n+4-1;
+spc=n+3;
    for(i=1;i<=n;i++)
    {
          for(k=spc;k>=1;k--)
